@@ -84,7 +84,7 @@ if (item['datetimeord_rec']){
       }
     } 
       return Object.assign({}, item, { 'curr_task': temp_task[0][1], 'curr_user': temp_task[0][2], 'row': index + 1, 'tdUrl': '---', 'srUrl': '---', 'duration': parseInt(temp_task[0][5]), 'init_dt': temp_task[0][6] });
-  }).filter(item => !item['textvarcustomer'].includes('TestTest'));
+  }).filter(item => !item['textvarcustomer'].includes('TestTest')); // This part is causing to form load without an data in it *******
   
   return retData;
 }
